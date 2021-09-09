@@ -1,9 +1,9 @@
 <p>
-<img src="Images/KingsCounty.jpeg" width="900" height="300">
+<img src="Images/.jpeg" width="900" height="300">
 </p>
 
 
-# Kings County Housing Prices Prediction
+# California Housing Prices Prediction
 
 **Authors**: Ning Chen
 
@@ -18,40 +18,21 @@ A real estate agency in Seattle WA wants to predict the housing prices in order 
 
 ### Exploratory Data Analysis (EDA)
 
-![graph](Images/mix.png)
+![graph](Images/.png)
 
 
 ### Heatmap
 
-![graph](Images/ks.png)
+![graph](Images/.png)
 
 
-### Statistical Test
-
-![graph](Images/waterfront.jpeg)
-
-* Two-Sample T-test & Welch’s T-test
-
-H0: The sample mean of prices of the houses with a view to a waterfront or not are the same. \
-Ha: The sample mean of prices of the houses with a view to a waterfront or not are different.
-
-* Chi-square Test
-
-H0: Different conditions of the houses has been viewed the same time. \
-Ha: Different conditions of the houses has been viewed different time.
-
-
-* ANOVA and post hoc analysis (Tukey HSD Test)
-
-H0: The sample mean of prices of the houses with different grading are the same. \
-Ha: The sample mean of prices of the houses with different grading are different.
 
 
 ## Data Preparation
 
 ### Data Cleaning & Feature Engineering
 
-![graph](Images/test.png)
+![graph](Images/.png)
 
 The rows with extreme values is considered. Identify categorical variables in the data set and create dummy columns to numeric format through one-hot encoding. New features are generated.
 
@@ -62,7 +43,7 @@ Interaction in a non-additive manner when affecting a third variable.
 
 Calculation of correlation and VIF.
 
-![graph](Images/heatmap.jpeg)
+![graph](Images/.jpeg)
 
 
 ## Modeling
@@ -72,7 +53,7 @@ Data is split to training and testing data, and then standardized with respect t
 
 ### Linear Regression
 
-![graph](Images/resi.jpeg)
+![graph](Images/.jpeg)
 
 Fit the model to the training data. Use the model to predict on the training set and the test set. Evaluate the training and test predictions using RMSE. Determine if the model is overfit.
 
@@ -92,7 +73,7 @@ The housing prices is predicted for Kings County in Seattle WA. The model solve 
 
 ## For More Information
 
-Please review the full analysis in [our Jupyter Notebook](https://github.com/ghcn345/house-price-pridiction-with-statistical-test/blob/master/Housing%20Prices%20Prediction.ipynb) or the [presentation](https://github.com/ghcn345/house-price-pridiction-with-statistical-test/blob/master/CRISP-DM_Housing%20Prices%20Prediction.pdf).
+Please review the full analysis in [our Jupyter Notebook]().
 
 For any additional questions, please contact **Ning Chen—chen.ning345@gmail.com**
 
@@ -113,7 +94,7 @@ Description of the structure of the repository and its contents:
 
 ## Annotation
 
-Column Names and descriptions for Kings County Data Set
+Column Names and descriptions for 
 
 * **id** - unique ID for a house
 * **date** - Date day house was sold
