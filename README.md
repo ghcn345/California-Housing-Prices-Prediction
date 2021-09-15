@@ -18,12 +18,12 @@ The model’s output (a prediction of a district’s median housing price) will 
 
 ### Exploratory Data Analysis (EDA)
 
-![graph](Images/.png)
+![graph](Images/scatter_matrix_plot.png)
 
 
 ### Heatmap
 
-![graph](Images/.png)
+![graph](Images/income_vs_house_value_scatterplot.png)
 
 
 
@@ -32,7 +32,7 @@ The model’s output (a prediction of a district’s median housing price) will 
 
 ### Data Cleaning & Feature Engineering
 
-![graph](Images/.png)
+![graph](Images/california_housing_prices_plot.png)
 
 The rows with extreme values is considered. Identify categorical variables in the data set and create dummy columns to numeric format through one-hot encoding. New features are generated.
 
@@ -43,7 +43,7 @@ Interaction in a non-additive manner when affecting a third variable.
 
 Calculation of correlation and VIF.
 
-![graph](Images/.jpeg)
+![graph](Images/housing_prices_scatterplot.png)
 
 
 ## Modeling
@@ -53,7 +53,7 @@ Data is split to training and testing data, and then standardized with respect t
 
 ### Linear Regression
 
-![graph](Images/.jpeg)
+![graph](Images/rooms_vs_house_value_scatterplot.png)
 
 Fit the model to the training data. Use the model to predict on the training set and the test set. Evaluate the training and test predictions using RMSE. Determine if the model is overfit.
 
