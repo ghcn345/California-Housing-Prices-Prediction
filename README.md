@@ -18,12 +18,19 @@ The model’s output (a prediction of a district’s median housing price) will 
 
 ### Exploratory Data Analysis (EDA)
 
-![graph](images/scatter_matrix_plot.png)
+![graph](images/attribute_histogram_plots.png)
+
+
 
 
 ### Heatmap
 
-![graph](images/income_vs_house_value_scatterplot.png)
+![graph](images/housing_prices_scatterplot.png)
+
+![graph](images/california_housing_prices_plot.png)
+
+
+
 
 
 
@@ -31,45 +38,28 @@ The model’s output (a prediction of a district’s median housing price) will 
 ## Data Preparation
 
 ### Data Cleaning & Feature Engineering
-
-![graph](images/california_housing_prices_plot.png)
-
 The rows with extreme values is considered. Identify categorical variables in the data set and create dummy columns to numeric format through one-hot encoding. New features are generated.
 
-### Interaction Features
-Interaction in a non-additive manner when affecting a third variable.
+![graph](images/scatter_matrix_plot.png)
 
-### Multicollinearity
+![graph](images/rooms_vs_house_value_scatterplot.png)
 
-Calculation of correlation and VIF.
-
-![graph](images/housing_prices_scatterplot.png)
-
+![graph](images/income_vs_house_value_scatterplot.png)
 
 ## Modeling
 
 ### Data Split and Normalization
 Data is split to training and testing data, and then standardized with respect to normal distribution.
 
-### Linear Regression
-
-![graph](images/rooms_vs_house_value_scatterplot.png)
+### Linear Regression, SVR(Support Vector Regression) and Random Forest Regression
 
 Fit the model to the training data. Use the model to predict on the training set and the test set. Evaluate the training and test predictions using RMSE. Determine if the model is overfit.
 
-### Non-linear transformations
-Polynomial features are implemented to investigate the effect of the non-linear terms.
+### Fine-tune the model with Grid Search and Randomized Search
 
-### Feature Selection Techniques
-KBest \
-Forward Selection \
-RFECV
 
-### Lasso and Ridge
-Except ordinary least squares, gradient descent algorithms are also tested.
 
-## Evaluation
-The housing prices is predicted for Kings County in Seattle WA. The model solve the problems for pridiction satisfactorily. New features are created to understand the questions. In any of these cases, it is also totally encouraged to revisit the earlier steps to optimze the features and model techniques.
+
 
 ## For More Information
 
@@ -83,37 +73,9 @@ Description of the structure of the repository and its contents:
 
 ```
 ├── README.md                                     <- The top-level README for reviewers of this project
-├── Housing Prices Prediction.ipynb               <- Narrative documentation for prediction in Jupyter notebook
-├── holdout_features.ipynb                        <- Narrative documentation for holdout in Jupyter notebook
-├── CRISP-DM_Housing Prices Prediction.pdf        <- PDF version of project presentation
-├── Data                                          <- Both sourced externally and generated from code
-└── Images                                        <- Both sourced externally and generated from code
+├── Housing_Prices_Prediction                     <- Narrative documentation for prediction in Jupyter notebook
+├── my_model                                      <- Saved trained model
+├── data                                          <- California Housing data
+└── images                                        <- Both sourced externally and generated from code
 
 ```
-
-
-## Annotation
-
-Column Names and descriptions for 
-
-* **id** - unique ID for a house
-* **date** - Date day house was sold
-* **price** - Price is prediction target
-* **bedrooms** - Number of bedrooms
-* **bathrooms** - Number of bathrooms
-* **sqft_living** - square footage of the home
-* **sqft_lot** - square footage of the lot
-* **floors** - Total floors (levels) in house
-* **waterfront** - Whether house has a view to a waterfront
-* **view** - Number of times house has been viewed
-* **condition** - How good the condition is (overall)
-* **grade** - overall grade given to the housing unit, based on King County grading system
-* **sqft_above** - square footage of house (apart from basement)
-* **sqft_basement** - square footage of the basement
-* **yr_built** - Year when house was built
-* **yr_renovated** - Year when house was renovated
-* **zipcode** - zip code in which house is located
-* **lat** - Latitude coordinate
-* **long** - Longitude coordinate
-* **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
-* **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
