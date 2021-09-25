@@ -33,8 +33,6 @@ The model’s output (a prediction of a district’s median housing price) will 
 
 
 
-
-
 ## Data Preparation
 
 ### Data Cleaning & Feature Engineering
