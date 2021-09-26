@@ -58,7 +58,6 @@ Fit the model to the training data. Use the model to predict on the training set
 
 
 
-
 ## For More Information
 
 Please review the full analysis in [our Jupyter Notebook]().
