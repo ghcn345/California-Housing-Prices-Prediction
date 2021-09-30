@@ -60,7 +60,7 @@ Fit the model to the training data. Use the model to predict on the training set
 
 ## For More Information
 
-Please review the full analysis in [our Jupyter Notebook]().
+Please review the full analysis in [our Jupyter Notebook](https://github.com/ghcn345/California-Housing-Prices-Prediction/blob/master/Housing_Prices_Prediction.ipynb).
 
 For any additional questions, please contact **Ning Chen—chen.ning345@gmail.com**
 
